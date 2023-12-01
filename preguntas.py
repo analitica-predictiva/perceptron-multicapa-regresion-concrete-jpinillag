@@ -16,7 +16,7 @@ def pregunta_01():
     Carga y separación de los datos en `X` `y`
     """
     # Lea el archivo `concrete.csv` y asignelo al DataFrame `df`
-    df = pd.read("concrete.csv",sep=",")
+    df = pd.read_csv("concrete.csv",sep=",")
 
     # Asigne la columna `strength` a la variable `y`.
     y = df["strength"]
@@ -29,6 +29,8 @@ def pregunta_01():
 
     # Retorne `X` y `y`
     return X, y
+
+
 
 
 def pregunta_02():
